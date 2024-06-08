@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.guess-container {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: repeat(6, 60px);
+    grid-template-columns: repeat(5, 60px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.guess-cell {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.guess-cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.present {
+    background-color: yellow;
+    color: black;
+}
+
+.absent {
+    background-color: gray;
+    color: white;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.lose {
+    color: red;
+}
+
+.win {
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.quote-content {
+    font-style: italic;
+    font-size: 20px;
+}
+.quote-author {
+    font-style: oblique;
+    font-size: 18px;
+    font-weight: bold;
+}
